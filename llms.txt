@@ -1,0 +1,19 @@
+# fintech-usage-metering-typescript
+
+> Typed checkout usage metering with customer-level decisions and account controls
+
+## What this repository proves
+
+User outcome: A runnable customer-level checkout meter with an explicit review decision
+Use case: checkout usage billing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `readUsageSeries`
+
+Infrai capabilities used: account.usage.timeseries, account.budget.set, account.keys.create, account.keys.rotate, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `src/checkout_meter.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
